@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LicencePro</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>AjouterUtilisateurServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Utilsateur.AjouterUtilisateurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterUtilisateurServlet</servlet-name>
+    <url-pattern>/AjouterUtilisateurServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ModifierUtilisateurServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Utilsateur.ModifierUtilisateurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierUtilisateurServlet</servlet-name>
+    <url-pattern>/ModifierUtilisateurServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.login.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <url-pattern>/LoginOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AjouterGerantServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Gerant.AjouterGerantServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterGerantServlet</servlet-name>
+    <url-pattern>/AjouterGerantServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AjouterAgenceServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Agence.AjouterAgenceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterAgenceServlet</servlet-name>
+    <url-pattern>/AjouterAgenceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AjouterDirecteurServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Directeur.AjouterDirecteurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterDirecteurServlet</servlet-name>
+    <url-pattern>/AjouterDirecteurServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>SupprimerDirecteurServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Directeur.SupprimerDirecteurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupprimerDirecteurServlet</servlet-name>
+    <url-pattern>/SupprimerDirecteurServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>ValidateDossierServlet</servlet-name>
+    <servlet-class>ma.ministere.servlet.Agence.ValidateDossierServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidateDossierServlet</servlet-name>
+    <url-pattern>/ValidateDossierServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
+
+
+
